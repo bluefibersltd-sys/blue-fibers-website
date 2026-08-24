@@ -1,0 +1,14 @@
+<header class="navbar">
+  <a class="brand" routerLink="/" aria-label="Blue Fibers home">
+    <img class="brand-logo"
+      src="images/blue_fibers_logo.png"
+      alt="Blue Fibers"
+      class="brand-logo"
+    />
+  </a>
+  <nav aria-label="Main navigation">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    <a routerLink="/textile" routerLinkActive="active">Textile</a>
+    <a routerLink="/non-textile" routerLinkActive="active">Non-Textile</a>
+  </nav>
+</header>

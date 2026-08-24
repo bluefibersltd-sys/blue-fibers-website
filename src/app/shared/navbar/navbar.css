@@ -1,0 +1,8 @@
+.navbar { height: 76px; padding: 0 max(5vw, 24px); display: flex; align-items: center; justify-content: space-between; background: #fff; border-bottom: 1px solid #e4edf6; position: sticky; top: 0; z-index: 20; }
+.brand { display: flex; align-items: center; gap: 11px; color: #102a43; text-decoration: none; letter-spacing: .08em; font-size: .92rem; }
+.brand strong { color: #1479c9; }
+.brand-mark { width: 40px; height: 40px; display: grid; place-items: center; border-radius: 11px 11px 11px 3px; background: linear-gradient(135deg,#1788dc,#0a4b86); color: white; font-weight: 800; letter-spacing: -.04em; }
+nav { display: flex; gap: 30px; align-items: center; }
+nav a { color: #486581; text-decoration: none; font-size: .95rem; font-weight: 600; padding: 28px 0 24px; border-bottom: 3px solid transparent; }
+nav a:hover, nav a.active { color: #0d6fb8; border-bottom-color: #1688d6; }
+@media (max-width: 650px) { .navbar { height: auto; padding-top: 14px; flex-direction: column; gap: 8px; } nav { gap: 18px; } nav a { padding: 12px 0 14px; font-size: .82rem; } }
