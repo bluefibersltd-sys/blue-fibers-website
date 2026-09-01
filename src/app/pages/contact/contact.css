@@ -1,0 +1,311 @@
+/* ================================
+   CONTACT PAGE
+================================ */
+
+.contact-page {
+  min-height: 100vh;
+  padding: 90px 6%;
+  background:
+    radial-gradient(circle at top left, #eaf7ff 0, transparent 35%),
+    #f7fbfe;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.contact-header {
+  max-width: 750px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+
+  color: #0b8fd3;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.contact-header h1 {
+  margin: 0 0 16px;
+
+  color: #0b3047;
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.contact-header p {
+  max-width: 600px;
+  margin: auto;
+
+  color: #647f98;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+
+/* ================================
+   GRID
+================================ */
+
+.contact-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+
+/* ================================
+   CARD
+================================ */
+
+.contact-card {
+  padding: 35px;
+
+  background: #ffffff;
+  border: 1px solid #d8eaf5;
+  border-radius: 18px;
+
+  box-shadow: 0 15px 40px rgba(14, 66, 96, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #9bd8f7;
+
+  box-shadow:
+    0 22px 50px rgba(14, 66, 96, 0.14);
+}
+
+
+/* ================================
+   CARD HEADING
+================================ */
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  margin-bottom: 30px;
+}
+
+.icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  border-radius: 12px;
+
+  background: #e6f6ff;
+  color: #078bcf;
+
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.location-label {
+  display: block;
+  margin-bottom: 4px;
+
+  color: #0b91d5;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.card-heading h2 {
+  margin: 0;
+
+  color: #103b55;
+  font-size: 23px;
+}
+
+
+/* ================================
+   CARD CONTENT
+================================ */
+
+.card-content h3,
+.person h3 {
+  margin: 0 0 7px;
+
+  color: #123b53;
+  font-size: 17px;
+}
+
+.company-chinese {
+  margin: 0;
+  color: #55778e;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+
+  margin: 22px 0;
+
+  background: #e1edf4;
+}
+
+.address,
+.chinese-address {
+  margin: 0;
+
+  color: #58758a;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.chinese-address {
+  margin-top: 20px;
+  color: #718b9d;
+}
+
+
+/* ================================
+   CONTACT PEOPLE
+================================ */
+
+.person {
+  padding: 22px 0;
+  border-top: 1px solid #e1edf4;
+}
+
+.person:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.person:last-child {
+  padding-bottom: 0;
+}
+
+.person h3 span {
+  font-weight: 400;
+  color: #668398;
+}
+
+.person > a {
+  display: inline-block;
+  margin: 5px 0 18px;
+
+  color: #078bd0;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.person > a:hover {
+  text-decoration: underline;
+}
+
+
+/* PHONE NUMBERS */
+
+.phone-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  margin-top: 10px;
+}
+
+.phone-row span {
+  min-width: 55px;
+
+  padding: 5px 9px;
+
+  background: #edf8fe;
+  border-radius: 6px;
+
+  color: #078bcf;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.phone-row a {
+  color: #405f73;
+  text-decoration: none;
+}
+
+.phone-row a:hover {
+  color: #078bcf;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+  .contact-page {
+    padding: 70px 30px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+  .contact-page {
+    padding: 55px 20px;
+  }
+
+  .contact-header {
+    margin-bottom: 40px;
+  }
+
+  .contact-header h1 {
+    font-size: 40px;
+  }
+
+  .contact-header p {
+    font-size: 16px;
+  }
+
+  .contact-card {
+    padding: 25px 20px;
+  }
+
+  .card-heading h2 {
+    font-size: 20px;
+  }
+
+  .icon {
+    width: 46px;
+    height: 46px;
+  }
+
+  .phone-row {
+    align-items: flex-start;
+  }
+}
